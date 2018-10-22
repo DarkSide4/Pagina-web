@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es" dir"lir">
+  <head>
+    <meta charset="utf-8">
+    <title>Compi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/all.css">
+  </head>
+  <body>
+    <header>
+      <h1>CompiApple</h1>
+      <nav>
+        <ul>
+          <li><a href="#inicio" data-scroll>Inició</a></li>
+          <li><a href="#productos" data-scroll>Productos</a></li>
+          <li><a href="#ofertas" data-scroll>Ofertas</a></li>
+          <li><a href="#contacto" data-scroll>Contacto</a></li>
+          <li><input type="text" name="search" placeholder="Search.."></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="inicio">
+      <h2>Macbook Pro</h2>
+      <h3>Más potencia.
+        <br>
+        Más rendimiento.
+        <br>
+        Más pro.
+      </h3>
+        <div class="botones">
+          <a href="#" class="comprar">Más Información</a>
+          <a href="#" class="comprar">COMPRAR</a>
+        </div>
+    </section>
+    <section id="productos">
+        <h1>Productos</h1>
+      <div class="productos">
+        <img src="./img/macbookair.png" alt="Una MacBook">
+        <h3>MackBook Pro</h3>
+        <a href="videos.html">COMPRAR</a>
+      </div>
+
+      <div class="productos">
+        <img src="./img/iphonexs.png" alt="Un PS4">
+        <h3>Nuevo IPhone XS
+        </h3>
+        <a href="videos.html">COMPRAR</a>
+      </div>
+
+      <div class="productos">
+        <img src="./img/IPadPro.png" alt="Nueva IPad">
+        <h3>IPad de 9.7</h3>
+        <a href="#">COMPRAR</a>
+      </div>
+
+      <div class="productos">
+        <img src="./img/IMac.png" alt="Una MacBook">
+        <h3>Nueva IMac</h3>
+        <a href="#">COMPRAR</a>
+      </div>
+
+      <div class="productos">
+        <img src="./img/applewatch.png" alt="Un PS4">
+        <h3>Apple Watch</h3>
+        <a href="#">COMPRAR</a>
+      </div>
+
+      <div class="productos">
+        <img src="./img/appleTv.png" alt="Nueva IPad">
+        <h3>Apple TV 4K</h3>
+        <a href="#">COMPRAR</a>
+      </div>
+
+    </section>
+    <section id="ofertas" class="parallax-window"
+    data-parallax="scroll" data-image-src="./img/otro.jpg">
+    </section>
+    <section id="ofertas2">
+      <h3>Oferta del dia</h3>
+      <div class="ofertas2">
+        <p>
+        <img src="./img/ofertadia.png" alt="Una MacBook">
+        </p>
+      </div>
+    </section>
+    <section id="contacto">
+      <div class="formulario">
+        <form>
+          <h3>Contactanos para obtener más información</h3>
+          <fieldset>
+            <label for="name">Nombre</label>
+            <input type="text" name="" value="" id="name" required>
+          </fieldset>
+          <fieldset>
+            <label for="address">Dirección</label>
+            <input type="text" name="" value="" id="address" required>
+          </fieldset>
+          <fieldset>
+            <label for="tel">Teléfono</label>
+            <input type="text" name="" value="" id="tel" required>
+          </fieldset>
+          <fieldset>
+            <label for="mensaje">Mensaje</label>
+            <textarea type="text" name="" value="" id="mensaje" required></textarea>
+          </fieldset>
+          <fieldset>
+            <input type="submit" name="" value="INGRESAR">
+          </fieldset>
+        </form>
+      </div>
+      <div class="mapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3442.0215435062473!2d-107.87813300583495!3d30.378746139763976!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86dcad4bca553657%3A0xabda349ebe8ed0fe!2sInstituto+Tecnol%C3%B3gico+Superior+de+Nuevo+Casas+Grandes!5e0!3m2!1ses-419!2smx!4v1539014364763"
+        width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+
+    </section>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/smooth-scroll.polyfills.min.js"></script>
+    <script>
+      var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
+    <script src="./js/parallax.min.js"></script>
+  </body>
+</html>

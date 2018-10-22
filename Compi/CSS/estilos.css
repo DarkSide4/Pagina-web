@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Lobster');
+*{
+margin: 0px;
+padding: 0px;
+
+}
+
+body{
+  background-color: #eee;
+  font-family: 'Roboto', sans-serif;
+
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Open Sans', sans-serif;
+}
+header{
+  background-color: #4d4d4d;
+  height: 70px;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+}
+header > h1 {
+  color: white;
+  width: 20%;
+  margin-left: 10%;
+  float: left;
+  line-height: 0.7;
+}
+header > nav{
+  width: 50%;
+  margin-left: 10%;
+  display: inline-block;
+}
+header > nav > ul > li{
+  width: 20%;
+  display: inline-block;
+  margin-left: -4px;
+  list-style: none;
+  line-height: 3.2;
+  text-align: center;
+}
+header > nav > ul > li > a {
+  color: white;
+  font-size: 1.3rem;
+  text-decoration: none;
+
+
+  /* 1em=16px */
+  /* 1rem=16px relativos */
+}
+section{
+  min-height: 500px;
+}
+section#inicio{
+  height: 90vh;
+  background-color: gray;
+  background-image: url(../img/macbookpro.png);
+  background-size: 100% 100%;
+
+
+}
+section#inicio > h2{
+  text-align: center;
+  color: white;
+  font-size: 4rem;
+  text-transform: uppercase;
+  margin-top: 150px;
+  float: left;
+  width: 100%;
+  text-shadow: 3px -3px 5px rgba(150, 150, 150, 1);
+
+}
+section#inicio > h3{
+  /* margin-top: 31%; */
+  padding-top: 35%;
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+}
+section#inicio > div > a.comprar , a.MasInfo{
+  float: left;
+  color: white;
+  font-size: 1.3rem;
+  display: block;
+  width: 200px;
+  height: 30px;
+  text-decoration: none;
+  border: 2px solid white;
+  text-align: center;
+  margin: 10px auto; /*centrar caja automatico*/
+  padding: 3px;
+  float: left;
+  margin-left: 5%;
+}
+section#inicio > div{
+  margin-left: 35%;
+}
+section#inicio>a:last-child{
+  color: white;
+  display: block;
+  text-align: center;
+  font-size: 3rem;
+}
+section#inicio > video {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5%;
+
+}
+section#productos{
+  background-color: #b3b5b7;
+  height: 950px;
+}
+section#productos > h1 {
+  padding-top: 2%
+}
+section#productos > div > h3{
+  margin-top: 2%;
+  text-align: center;
+}
+section#productos > div > a {
+  float: right;
+  display: block;
+  margin-top: 2%;
+  text-align: center;
+}
+.productos{
+  width: 20%;
+  margin-left: 11%;
+  /* border: 1px solid #ccc; */
+  height: 350px;
+  float: left;
+  margin-top: 50px;
+}
+.productos > img{
+  width: 70%;
+  margin-left: 15%;
+  height: 80%;
+}
+.productos > a {
+  background-color: white;
+  border-radius: 5px;
+  color: #343834;
+  font-weight: bold;
+  height: 20px;
+  padding: 5px;
+  text-decoration: none;
+  width: 150px;
+  margin: 10px auto;
+}
+section#productos h1{
+  margin-left: 13%;
+  font-size: 3rem;
+}
+section#ofertas{
+  height: 300px;
+  min-height: 300px;
+}
+section#ofertas h3{
+  color: white;
+  text-align: center;
+  font-size: 2.2rem;
+  padding-top: 100px;
+}
+section#ofertas2{
+  color: gray;
+}
+section#ofertas2 h3{
+  margin-left: 13%;
+  font-size: 3rem;
+  padding-top: 2%;
+}
+section#ofertas2 img {
+  display: block;
+  text-align: center;
+  margin-left: 33%;
+  margin-bottom: 5%;
+}
+section#contacto{
+  background-color: white;
+}
+section#contacto .formulario{
+  width: 40%;
+  float: left;
+  margin-left: 10%;
+}
+section#contacto .mapa{
+  width: 45%;
+  float: left;
+
+}
+section#contacto .formulario form{
+  padding: 10px;
+
+}
+section#contacto .formulario form h3{
+  font-size: 2rem;
+}
+section#contacto .formulario form fieldset{
+  margin-top: 10px;
+  border: none;
+}
+section#contacto .formulario form fieldset label{
+  display: block;
+  width: 100%;
+}
+section#contacto .formulario form fieldset input[type="text"],
+section#contacto .formulario form fieldset textarea{
+  display: block;
+  width: 80%;
+  border: none;
+  background-color: white;
+  color: red;
+  outline-color: blue;
+  height: 30px;
+}
+section#contacto .formulario form fieldset textarea{
+  height: 200px;
+  resize: none;
+}
+section#contacto .formulario form fieldset input[type="submit"]{
+  background-color: blue;
+  color: white;
+  width: 140px;
+  height: 30px;
+  border: none;
+}
+header > nav > ul > li > input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url("../img/search.png");
+    background-position: 10px 10px;
+
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+header > nav > ul > li > input[type=text]:focus {
+    width: 120%;
+}
